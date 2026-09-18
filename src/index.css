@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-espresso: #0b0806;
+    --bg-walnut: #17100b;
+    --card-walnut: #1f1610;
+    --bronze-accent: #c59b63;
+    --bronze-light: #e6c594;
+    --bronze-dark: #825c30;
+    --wood-bark: #2d1e15;
+  }
+
+  body {
+    background-color: #0b0806;
+    color: #e5dbd0;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-mono-tech {
+    font-family: 'Space Mono', monospace;
+  }
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0806;
+}
+::-webkit-scrollbar-thumb {
+  background: #38271c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c59b63;
+}
+
+/* Metallic bronze gradient text */
+.text-bronze-gradient {
+  background: linear-gradient(135deg, #f3deb9 0%, #c59b63 50%, #8c6239 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-walnut-gradient {
+  background: linear-gradient(135deg, #e5dbd0 0%, #a48c7c 60%, #634d3d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle bronze glow */
+.bronze-glow {
+  box-shadow: 0 0 25px rgba(197, 155, 99, 0.22);
+}
+
+.bronze-border-glow {
+  border-color: rgba(197, 155, 99, 0.4);
+  box-shadow: 0 0 15px rgba(197, 155, 99, 0.15), inset 0 0 15px rgba(197, 155, 99, 0.05);
+}
+
+/* Film grain effect */
+.film-grain {
+  background-image: radial-gradient(rgba(197, 155, 99, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}

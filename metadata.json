@@ -1,0 +1,6 @@
+{
+  "name": "AEVRNN - Cinematic 3D Portfolio",
+  "description": "Continuous cinematic 3D digital gallery and portfolio for AEVRNN (Auritra Paul), built with Three.js, WebGL, and smooth scroll camera choreography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
